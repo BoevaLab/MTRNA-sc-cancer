@@ -1,0 +1,130 @@
+python preprocessing-script.py \
+    SCLC_Chan_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/SCLC_Chan_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "sample" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells "T_cell" "B_cell" "Fibroblast" "Epithelial" "Endothelial" "Dendritic" "Macrophage" "Mast" "Plasma" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    RCC_Bi_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/Bi_RCC_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "biosample_id" \
+    --celltypecol "cell_type_extended" \
+    --malignantcells "TP2" "TP1" "Tumor" \
+    --tmecells "T cell" "TAM" "T-Helper" "NK" "CD8+ T cell" "Myeloid" "Monocyte" "B cell" "NKT" "T-Reg" "Plasma cell" "Macrophage" "DC" "Endothelial" "Fibroblast" "Mast cell" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    NasoCarcinoma_Chen_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/Chen_NasoCarcinoma_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "sample" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells "B_cell" "T_cell" "NK_cell" "Macrophage" "Plasma" "Epithelial" "Endothelial" "Dendritic" "Lymphovascular" "Fibroblast" "Myofibroblast" "Mast" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    Pancreas_Raghavan_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/Raghavan_Pancreas_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "sample" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells "B_cell" "T_cell" "Dendritic" "Macrophage" "Plasma" "Fibroblast" "Endothelial" "Epithelial" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    Pancreas_Steele_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/Steele_Pancreas_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "sample" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells "B_cell" "T_cell" "Dendritic" "Macrophage" "Plasma" "Fibroblast" "Endothelial" "Epithelial" "Granulocyte" "Mast" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    Prostate_Chen_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/Chen_Prostate_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "sample" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells "Epithelial" "T_cell" "Endothelial" "Fibroblast" "Macrophage" "Mast" "B_cell" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+
+python preprocessing-script.py \
+    Breast_Wu_10X.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/Breast_Wu_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "Patient" \
+    --celltypecol "celltype_major" \
+    --malignantcells "Cancer Epithelial" \
+    --tmecells "T-cells" "Myeloid" "Endothelial" "CAFs" "PVL" "Normal Epithelial" "Plasmablasts" "B-cells" \
+    --nmintme 50 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    auxiliary_data/Breast_Chung_dummy.h5ad \
+    --datatype "tpm" \
+    --savedir filtered_data/Breast_Chung \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "dummy_patient" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells 'Stromal' 'Myeloid' 'T_cell' 'B_cell' \
+    --nmintme 30 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    UvealMelanoma_Durante.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/UvealMelanoma_Durante_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "patient" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells 'T_cell' 'Monocyte' 'Plasma_cell' 'Endothelial' 'B_cell' \
+    --nmintme 30 \
+    --nmintmerefcat 10 \
+    --leidenres 3
+
+python preprocessing-script.py \
+    LUAD_PrimaryTumor_Bischoff.h5ad \
+    --datatype "10x" \
+    --savedir filtered_data/LUAD_Bischoff_10X \
+    --gencodefile auxiliary_data/gencode_v41_positions.csv \
+    --samplecol "sample" \
+    --celltypecol "cell_type" \
+    --malignantcells "Malignant" \
+    --tmecells 'T_cell' 'Macrophage' 'B_cell' 'Plasma' 'Dendritic' 'Epithelial' 'Mast' 'Endothelial' 'Monocyte' 'Myofibroblast' \
+    --nmintme 30 \
+    --nmintmerefcat 10 \
+    --leidenres 3

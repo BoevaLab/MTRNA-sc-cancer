@@ -3,7 +3,8 @@
 This folder contains the script used to perform the quality control on the data used in the study.  
 
 An example bash file to run the script is provided as `example-bash.sh`. Importantly, you must provide the name of the malignant cells and the TME cells in the cell type column. 
-If your dataset only contains TPM data, this can be accomodated through the datatype argument. 
+
+We also provide a list of the command lines we used to process the datasets in this study. 
 
 ## Argument descriptions
 
