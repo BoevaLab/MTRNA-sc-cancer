@@ -10,14 +10,14 @@ Replace these by wherever you saved the `auxiliary_data` folder.
 In the following explanations, the `XXXX` replace names that are repeated across the notebook (usually the cancer type).
 
 ## `1. analyze_unfiltered_data.ipynb`
-This notebook contains the analysis used to create Suppl Fig S2 and S12. 
+This notebook contains the analysis comparing unfiltered and filtered data, used to create Suppl Fig S2 and S12. 
 - `adata = sc.read_h5ad("/add/path/here/XXXX.h5ad")`: path to where the data BEFORE preprocessing is saved.
 - `filtered_adata = sc.read_h5ad("/add/path/here/filtered_data/XXXX/filtered_adata.h5ad")`: path to where the data AFTER preprocessing is saved.
 - `fig.savefig("/add/path/here/figures/pre_vs_post/XXXX.svg", dpi=200, bbox_inches="tight")`:  path to where to save the figures.
 
 
 ## `2. celllevel_analysis.ipynb`
-This notebook contains the analysis used to create Suppl Fig S3-S11.
+This notebook contains the analysis finding case and controls and comparing the pctMT in healthy and malignant cells, used to create Suppl Fig S3-S11.
 - `full_resdir = pl.Path("/add/path/here/markers_highmt")`: where to save the results
 - `adata = sc.read_h5ad("/add/path/here/filtered_data/XXXX/filtered_adata.h5ad")`: where the data after preprocessing data is saved.
 - `fig.savefig("/add/path/here/figures/case_control/XXXX.png", dpi=200, bbox_inches="tight")`: where to save the figures
@@ -46,4 +46,16 @@ Data from Chung et al. can be found [here](https://www.ncbi.nlm.nih.gov/geo/quer
 - `bulk = pd.read_csv("/add/path/here/auxiliary_data/Breast_Chung_bulk.csv",index_col=0)`: the FPKM transformed data from Chung et al.
 - `adata = sc.read_h5ad("/add/path/here/filtered_data/Breast_Chung")`: the path to the Chung et al. data AFTER preprocessing. **NOTE:** The Chung et al. data is processed differently due to the small amount of cells per patients; see more info in the [preprocessing folder](https://github.com/BoevaLab/MTRNA-sc-cancer/tree/main/preprocessing). 
 
+## `5. SpatialHD_Breast.ipynb` and `5bis. SpatialHD_Lung.ipynb`
+This notebook contains the analysis of the Spatial HD data for Breast and Lung tissue, used in Fig 2 and Suppl Fig S14.
+
+- `sdata = visium_hd(path="/add/path/here/Breast_VisiumHD_FreshFrozen/")` or `sdata = visium_hd(path="/add/path/data/Lung_VisiumHD_10X")`: path to the SpaceRanger output folder downloaded from the 10X website.
+- `ax.figure.savefig("/add/path/here/figures/XXXX_celltypes.png", dpi=200, bbox_inches="tight")`: where to save the figure.
+- `sdata['square_008um'].write("/add/path/here/processed_data/XXXX-visium-hd-2_square_008um.h5ad")`: where to save the AnnData object with updated information computed from the metacells.
+- `fig.savefig("/add/path/here/figures/XXXX_distcounts.svg", dpi=200, bbox_inches="tight")`: where to save the figure.
+
+## `6. correlated_mtDNA_CN`
+THis notebook contains the analysis for the mtDNA vs mtRNA analysis, in Suppl Fig S15.
+
+Prior to this analysis, you will need to download data from A. [here](https://zenodo.org/records/7517412) and B. [here](https://zenodo.org/records/10498240). For A., we used the june_2022 version. Files starting with `/add/path/here/sigs_june2022/` are from A. and files starting with `/add/path/here/10498240/` are from B.
 
