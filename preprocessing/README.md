@@ -6,6 +6,10 @@ An example bash file to run the script is provided as `example-bash.sh`. Importa
 
 We also provide a list of the command lines we used to process the datasets in this study. 
 
+**NOTE: the Chung et al. breast data used for Fig 1 and Suppl Fig S13 had to preprocessed separately because of the small amount of cells per patients.** We thus processed the full dataset rather than setting thresholds per patient. To do so, we added a "dummy_patient" column in the downloaded data and used that column as the `sample` column.
+
+The filtered/processed data can also be provided directly to interested researchers. To do so, please contact josephine.yates@inf.ethz.ch or valentina.boeva@inf.ethz.ch. 
+
 ## Argument descriptions
 
 - `data`: path to your .h5ad data. The data should be an h5ad object containing the raw counts or TPMs in .X and containing a column with the cell type and a column with the sample ID in .obs. Cell types will be further refined with CNVs. 
