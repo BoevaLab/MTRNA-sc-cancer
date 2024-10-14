@@ -5,7 +5,7 @@ Placeholders were inserted as `/add/path/here/` in the files to replace paths. T
 Some of these placeholders indicate 
 
 Any placeholder that starts with `/add/path/here/auxiliary_data` indicates a file that is provided in the `auxiliary_data` [folder](https://github.com/BoevaLab/MTRNA-sc-cancer/tree/main/auxiliary_data).
-Replace these by wherever you saved the `auxiliary_data` folder.
+Replace these by wherever you saved the `auxiliary_data` folder. These files will thus not be described in the following.
 
 In the following explanations, the `XXXX` replace names that are repeated across the notebook (usually the cancer type).
 
@@ -55,7 +55,21 @@ This notebook contains the analysis of the Spatial HD data for Breast and Lung t
 - `fig.savefig("/add/path/here/figures/XXXX_distcounts.svg", dpi=200, bbox_inches="tight")`: where to save the figure.
 
 ## `6. correlated_mtDNA_CN`
-THis notebook contains the analysis for the mtDNA vs mtRNA analysis, in Suppl Fig S15.
+This notebook contains the analysis for the mtDNA vs mtRNA analysis, in Suppl Fig S15.
 
 Prior to this analysis, you will need to download data from A. [here](https://zenodo.org/records/7517412) and B. [here](https://zenodo.org/records/10498240). For A., we used the june_2022 version. Files starting with `/add/path/here/sigs_june2022/` are from A. and files starting with `/add/path/here/10498240/` are from B.
 
+## `7. MitoCarta.ipynb`
+
+This notebook contains the analysis used to produce the MitoCarta heatmap from Fig 3.
+
+- `resdir = pl.Path("/add/path/here/metabolic_dysregulation/mitocarta_met_res")`: where the mitocarta results from [`3. create_metacells.ipynb`](https://github.com/BoevaLab/MTRNA-sc-cancer/blob/main/notebooks/3.%20create_metacells.ipynb) were saved.
+- `fig.savefig("/add/path/here/figures/mitocarta_meta_dys.svg", dpi=200, bbox_inches='tight')`: where to save the figure.
+
+## `8. metacell_plot`
+
+This notebook contains the analysis used to produce metacells plots, for Fig 3 and Suppl Fig S17.
+
+- `resdir = pl.Path("/add/path/here/info-metacells")`: path to where the results were saved in [`3. create_metacells.ipynb`](https://github.com/BoevaLab/MTRNA-sc-cancer/blob/main/notebooks/3.%20create_metacells.ipynb).
+- `fig.savefig("/add/path/here/figures/XXXX.svg", dpi=300, bbox_inches="tight")`: where to save the figure.
+- `resdir = pl.Path("/add/path/here/egfr_expression_metacells/")`: path to where the EGFR family gene expression was saved in [`3. create_metacells.ipynb`](https://github.com/BoevaLab/MTRNA-sc-cancer/blob/main/notebooks/3.%20create_metacells.ipynb).
