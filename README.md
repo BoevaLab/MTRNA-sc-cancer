@@ -11,6 +11,11 @@ You can create then a conda environment from the file using
 ```
 conda env create --name mtrna-env --file mtrna-env.yml
 ```
+Activate the conda environment with 
+```
+conda activate mtrna-env
+```
+
 
 The first step of the analysis consists in downloading the data from the original source and transforming it so that it is saved as an .h5ad file to preprocess it. Details are given in [preprocessing](https://github.com/BoevaLab/MTRNA-sc-cancer/tree/main/preprocessing). 
 
