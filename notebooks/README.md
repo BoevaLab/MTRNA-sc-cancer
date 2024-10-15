@@ -73,3 +73,16 @@ This notebook contains the analysis used to produce metacells plots, for Fig 3 a
 - `resdir = pl.Path("/add/path/here/info-metacells")`: path to where the results were saved in [`3. create_metacells.ipynb`](https://github.com/BoevaLab/MTRNA-sc-cancer/blob/main/notebooks/3.%20create_metacells.ipynb).
 - `fig.savefig("/add/path/here/figures/XXXX.svg", dpi=300, bbox_inches="tight")`: where to save the figure.
 - `resdir = pl.Path("/add/path/here/egfr_expression_metacells/")`: path to where the EGFR family gene expression was saved in [`3. create_metacells.ipynb`](https://github.com/BoevaLab/MTRNA-sc-cancer/blob/main/notebooks/3.%20create_metacells.ipynb).
+
+## `9. cell_line_drug_res.ipynb`
+
+This notebook contains the analysis on the cell line drug resistance/sensitivity linked to pctMT, used in Fig 4 and Suppl Fig S16.
+The data needs to be downloaded from [here](https://depmap.org/portal/data_page/?tab=allData) before.
+
+- `expected_counts = pd.read_csv("/add/path/here/OmicsExpressionGenesExpectedCountProfile.csv",index_col=0)`: where the DepMap count data is saved.
+- `profile_mapping = pd.read_csv("/add/path/here/OmicsProfiles.csv",index_col=0)`: where the DepMap profile is saved. 
+- `rna = pd.read_csv("/add/path/here/internal-23q2_v98-omicsexpressionproteincodinggenestpmlogp1.csv",index_col=0)`:  where the normalized RNA data from DepMap is saved.
+- `info = pd.read_csv("/add/path/here/internal-23q2_v98-model.csv",index_col=0)`: where the metadata for DepMap cell lines is saved.
+- `drug_response = pd.read_csv("/add/path/here/GDSC1_fitted_dose_response_27Oct23.csv").set_index("SANGER_MODEL_ID")`: where the drug response from DepMap is saved.
+- `fig.savefig("/add/path/here/figures/XXXX.svg", dpi=200, bbox_inches="tight")`: where to save the figure.
+- `all_rs.to_csv("/add/path/here/drug_resistance/correlation.csv")` and `all_ps.to_csv("/add/path/here/drug_resistance/pvalues.csv")`: where to save the results.
