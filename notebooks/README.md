@@ -86,3 +86,13 @@ The data needs to be downloaded from [here](https://depmap.org/portal/data_page/
 - `drug_response = pd.read_csv("/add/path/here/GDSC1_fitted_dose_response_27Oct23.csv").set_index("SANGER_MODEL_ID")`: where the drug response from DepMap is saved.
 - `fig.savefig("/add/path/here/figures/XXXX.svg", dpi=200, bbox_inches="tight")`: where to save the figure.
 - `all_rs.to_csv("/add/path/here/drug_resistance/correlation.csv")` and `all_ps.to_csv("/add/path/here/drug_resistance/pvalues.csv")`: where to save the results.
+
+## `10. compare-qc-filtering.ipynb`
+
+This notebook contains the analysis comparing filtering between DDQC, thresholds, and our filtering procedure.
+
+- `data1 = pg.read_input("/add/path/here/Pancreas_Steele_10X.h5ad", genome = 'hg38')` or `adata = sc.read_h5ad("/add/path/here/Pancreas_Steele_10X.h5ad")`: where the raw Pancreatic Cancer data from Steele et al. is saved.
+- `pg.write_output(data1, "/add/path/here/DDQC_data.h5ad")` or `adata.write_h5ad("/add/path/here/Scanpy_data.h5ad")`: where to save the DDQC processed data or Scanpy processed data.
+- `open("/add/path/here/KEGG_2021_Human.txt", "r")`:  where the KEGG data is saved (in auxiliary data)
+- `state_sig_df = pd.read_csv("/add/path/here/auxiliary_data/PDAC_states_markers.txt",sep="\t")`: the gene signatures used for the pancreatic cancer programs used in the paper.
+- `adata_ours = sc.read_h5ad("/add/path/here/Ours_adata.h5ad")` or `adata_scanpy = sc.read_h5ad("/add/path/here/Scanpy_data.h5ad")` or `adata_DDQC = sc.read_h5ad("/add/path/here/DDQC_data.h5ad")`: where different processed objects were saved.
