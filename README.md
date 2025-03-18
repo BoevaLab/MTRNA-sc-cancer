@@ -25,18 +25,14 @@ Then, you can run the notebooks in the order indicated. Placeholders must be rep
 
 The data used in the paper can be found in the following places:
 The single-cell studies used in this study can be downloaded from: 
-- The Gene Expression Omnibus (GEO) website: Breast cancer, Wu et al., at GSE176078; Pancreatic ductal adenocarcinoma, Steele et al., at GSE155698; Prostate cancer, Song et al., at GSE176031; Nasopharyngeal carcinoma, Chen et al., at GSE150430; Breast cancer, Chung et al., at GSE75688
-- The Broad single-cell portal: Metastatic Pancreas, Raghavan et al. at https://singlecell.broadinstitute.org/single_cell/study/SCP1644/microenvironment-drives-cell-state-plasticity-and-drug-response-in-pancreatic-cancer; Renal clear cell cancer, Bi et al. at https://singlecell.broadinstitute.org/single_cell/study/SCP1288/tumor-and-immune-reprogramming-during-immunotherapy-in-advanced-renal-cell-carcinoma#study-summary
+- The Gene Expression Omnibus (GEO) website: Breast cancer, Wu et al., at GSE176078 and EGAD00001007495; Pancreatic ductal adenocarcinoma, Steele et al., at GSE155698; Prostate cancer, Song et al., at GSE176031; Nasopharyngeal carcinoma, Chen et al., at GSE150430; Breast cancer, Chung et al., at GSE75688
+- The Broad single-cell portal: Metastatic Pancreatic cancer, Raghavan et al. at https://singlecell.broadinstitute.org/single_cell/study/SCP1644/microenvironment-drives-cell-state-plasticity-and-drug-response-in-pancreatic-cancer; Renal clear cell cancer, Bi et al. at https://singlecell.broadinstitute.org/single_cell/study/SCP1288/tumor-and-immune-reprogramming-during-immunotherapy-in-advanced-renal-cell-carcinoma#study-summary
 - The cancer cell atlas (3CA): Small cell lung cancer, Chan et al., at https://www.weizmann.ac.il/sites/3CA/lung; Lung adenocarcinoma, Bischoff et al., https://www.weizmann.ac.il/sites/3CA/lung; Uveal Melanoma, Durante et al., https://www.weizmann.ac.il/sites/3CA/othermodels
-- Zenodo: mtDNA-linked single-cell, Kim et al., https://doi.org/10.5281/zenodo.10498240
+Zenodo: mtDNA-linked single-cell, Kim et al., https://doi.org/10.5281/zenodo.10498240
+- Single-cell lineage tracking data: Kuramochi cell line at GSE223003; MDAMB468 cell line at GSE228382
 
 The bulk data used in this study can be downloaded from:
 - The Gene Expression Omnibus (GEO) website: Breast cancer, Wu et al., at GSE176078; Breast cancer, Chung et al., at GSE75688
 - The Cancer Cell Line Encyclopedia (CCLE): for the CCLE RNA-seq and drug sensitivity data https://depmap.org/portal/data_page/?tab=allData
-- The Cancer Genome Atlas:
-HTSeq - FPKM-UQ RNA-seq data:  https://xenabrowser.net/datapages/
-clinical data: TCGA-Clinical Data Resource (CDR) Outcome https://gdc.cancer.gov/about-data/publications/pancanatlas
-subtype information: https://bioconductor.org/packages/release/bioc/vignettes/TCGAbiolinks/inst/doc/subtypes.html
-tumor purity data: ABSOLUTE purity/ploidy file https://gdc.cancer.gov/about-data/publications/pancanatlas
 
 The two samples processed with spatial transcriptomics method Visium HD are freely available on the 10X website: DCIS https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-breast-cancer-fresh-frozen and LUAD at https://www.10xgenomics.com/datasets/visium-hd-cytassist-gene-expression-human-lung-cancer-post-xenium-expt.  
