@@ -1,0 +1,25 @@
+PatientID	Patient age at initial diagnosis Ge	Stage at initial diagnosis	Treatment of primary disease	Metastatic treatments prior to biopsy	Patient status	Surival time from initial diagnosis
+PANFR0383	76	Metastatic	None	Gemcitabine/Nab- paclitaxel/Anti- hepatocyte growth factor antibody	Deceased	302
+PANFR0473Li and PANFR0473Lu	63	Metastatic	None	FOLFIRINOX; Niraparib; PANFR0473Lu also post-Gemcitabine/Nab- paclitaxel	Deceased	1034
+PANFR0489 and PANFR0489R2	67	Localized	Whipple; FOLFOX/Nab- paclitaxel; Capecitabine + radiation	Gemcitabine/Nab- paclitaxel; Gemcitabine; 5-FU/Liposomal irinotecan; FOLFOX	Deceased	2068
+PANFR0526	72	Metastatic	None	None	Deceased	10
+PANFR0543	65	Metastatic	None	None	Deceased	120
+PANFR0545	75	Metastatic	None	None	Deceased	94
+PANFR0552	49	Localized	FOLFIRINOX; Whipple; Gemcitabine/Nab- paclitaxel	None	Deceased	536
+PANFR0557	44	Localized	Distal pancreatectomy; Gemcitabine/ Capecitabine	FOLFIRINOX; FOLFIRI	Deceased	1291
+PANFR0562	76	Metastatic	None	None	Deceased	111
+PANFR0575	79	Metastatic	None	None	Deceased	32
+PANFR0576	63	Metastatic	None	None	Deceased	159
+PANFR0578	62	Metastatic	None	FOLFIRINOX; Lung metastatectomy; FOLFIRINOX; 5-FU + radiation; Olaparib; Whipple	Alive	2068
+PANFR0580	53	Metastatic	None	None	Alive	883
+PANFR0583	61	Metastatic	None	None	Deceased	52
+PANFR0588	71	Metastatic	None	None	Deceased	227
+PANFR0592	37	Locally advanced 	FOLFIRINOX; Whipple 	None	Deceased	376
+PANFR0593	63	Localized	None	None	Alive	199 (lost to follow up)
+PANFR0598	75	Metastatic	None	None	Alive	817
+PANFR0604	67	Metastatic	FOLFIRINOX	FOLFIRINOX; 	Deceased	952
+PANFR0605	75	Metastatic	None	None	Deceased	322
+PANFR0631	66	Metastatic	None	None	Alive	724
+PANFR0635	76	Metastatic	None	None	Alive	744
+PANFR0637	65	Metastatic	None	None	Deceased	149
+
