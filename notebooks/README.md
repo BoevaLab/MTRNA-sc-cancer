@@ -96,3 +96,20 @@ This notebook contains the analysis comparing filtering between DDQC, thresholds
 - `open("/add/path/here/KEGG_2021_Human.txt", "r")`:  where the KEGG data is saved (in auxiliary data)
 - `state_sig_df = pd.read_csv("/add/path/here/auxiliary_data/PDAC_states_markers.txt",sep="\t")`: the gene signatures used for the pancreatic cancer programs used in the paper.
 - `adata_ours = sc.read_h5ad("/add/path/here/Ours_adata.h5ad")` or `adata_scanpy = sc.read_h5ad("/add/path/here/Scanpy_data.h5ad")` or `adata_DDQC = sc.read_h5ad("/add/path/here/DDQC_data.h5ad")`: where different processed objects were saved.
+
+## `11. clinical_association.ipynb`
+
+This notebook contains the analysis on the clinical data linked to pctMT, used in Fig 6. 
+The clinical data used in the analysis can be found in the `auxiliary_data` [folder](https://github.com/BoevaLab/MTRNA-sc-cancer/tree/main/auxiliary_data).
+
+- `adata = sc.read_h5ad("/add/path/here/filtered_data/XXXX/filtered_adata.h5ad")`: where the data after preprocessing data is saved.
+- `fig.savefig("/add/path/here/figures/XXXX.pdf, format='pdf')`: where to save the figure.
+
+## `12. transcriptional_states.ipynb`
+
+This notebook contains the analysis on the transcriptional states linked to highMT and lowMT metacells, used in Fig 6 and Fig S18. 
+The gene markers of the transcriptional states used in the analysis can be found in the `auxiliary_data` [folder](https://github.com/BoevaLab/MTRNA-sc-cancer/tree/main/auxiliary_data).
+
+- `metacells = sc.read_h5ad("/add/path/here/XXX/metacells.h5ad")`: where the metacell data is saved.
+- `fig.savefig("/add/path/here/figures/XXXX.pdf, format='pdf')`: where to save the figure.
+- `mal_meta.obs[[XXX, YYY]].to_csv("/add/path/here/XXX_states.csv")`: where to save the metacell scores.
