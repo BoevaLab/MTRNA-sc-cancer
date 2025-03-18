@@ -113,3 +113,12 @@ The gene markers of the transcriptional states used in the analysis can be found
 - `metacells = sc.read_h5ad("/add/path/here/XXX/metacells.h5ad")`: where the metacell data is saved.
 - `fig.savefig("/add/path/here/figures/XXXX.pdf, format='pdf')`: where to save the figure.
 - `mal_meta.obs[[XXX, YYY]].to_csv("/add/path/here/XXX_states.csv")`: where to save the metacell scores.
+
+## `13. cell_lineage_analysis.ipynb`
+
+This notebook contains the analysis on the link between pctMT and drug resistance using single-cell lineage tracing data, associated with Fig 5d-e and Fig S19. The additional data necessary for the analysis can be found in `auxiliary_data` [folder](https://github.com/BoevaLab/MTRNA-sc-cancer/tree/main/auxiliary_data).
+
+- `path = "/add/path/here/GSE223003_lineage/)`: where the single cell data downloaded from GSE223003 or GSE228382 is saved.
+- `fig.savefig(path  + "afatinib.pdf", format="pdf")`: where to save the figures.
+- `metadata = pd.read_csv(path + "Afa.TS.Seurat_metadata.txt", sep='\t', index_col = 0)`: where the metadata for GSE228382 data is saved.
+- `table3 = pd.read_csv(path + "Table_S3.txt", sep='\t', index_col=0)`: where the supplementary table with clone characterization is saved.
